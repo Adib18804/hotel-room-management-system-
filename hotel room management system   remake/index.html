@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Hotel Room Management</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome Icons -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+        <header>
+            <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+                <div class="container">
+                    <a class="navbar-brand" href="#">My Website</a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav ms-auto">
+                            <li class="nav-item">
+                                <a class="nav-link active" href="index.html">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="about.html">About</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="services.html">Services</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="contact.html">Contact</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </header>
+
+    <!-- Hero Section -->
+    <section id="hero" class="text-center py-5 bg-light">
+        <h1 class="display-4 fw-bold">Welcome To Our Hotel</h1>
+        <p class="lead">Experience Luxury And Comfort With Our Exceptional Services</p>
+        <a href="rooms.html" class="btn btn-primary btn-lg">Explore Rooms</a>
+    </section>
+    <!-- Room Gallery Section -->
+    <section id="gallery" class="py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center mb-4 display-5 fw-bold">Our Rooms</h2>
+
+            <div class="slider-container">
+                <div class="room-slider">
+                    <img src="img/slider 1.jpeg" alt="Room 1">
+                    <img src="img/sldier 2.jpeg" alt="Room 2">
+                    <img src="img/slider 3.jpeg" alt="Room 3">
+                    <img src="img/slider 4.jpeg" alt="Room 4">
+                    <img src="img/slider 5.jpeg" alt="Room 5">
+                    <img src="img/slider6.webp" alt="Room 6">
+                </div>
+                <div class="slider-dots">
+                    <span class="active"></span>
+                    <span class="inactive"></span>
+                    <span class="inactive"></span>
+                    <span class="inactive"></span>
+                    <span class="inactive"></span>
+                    <span class="inactive"></span>
+                </div>
+            </div>
+
+
+            <!-- Booking Section -->
+            <section id="booking" class="bg-light py-5">
+                <div class="container">
+                    <h2 class="text-center mb-4 display-5 fw-bold">Book Your Stay</h2>
+                    <div class="row justify-content-center">
+                        <div class="col-md-8">
+                            <form id="bookingForm">
+                                <div class="mb-3">
+                                    <label for="name" class="form-label">Full Name</label>
+                                    <input type="text" class="form-control" id="name" placeholder="Full Name" required>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="phone" class="form-label">Phone Number</label>
+                                    <input type="tel" class="form-control" id="phone"
+                                        placeholder="Enter your phone number" pattern="[0-9]{10}" required>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="email" class="form-label">Email Address</label>
+                                    <input type="email" class="form-control" id="email" placeholder="Enter your email"
+                                        required>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="room" class="form-label">Room Type</label>
+                                    <select class="form-select" id="room" required>
+                                        <option value="">Select Room Type</option>
+                                        <option value="single">Single Room</option>
+                                        <option value="double">Double Room</option>
+                                        <option value="suite">Suite</option>
+                                    </select>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-6 mb-3">
+                                        <label for="date" class="form-label">Check-in Date</label>
+                                        <input type="date" class="form-control" id="date" required>
+                                    </div>
+                                    <div class="col-md-6 mb-3">
+                                        <label for="time" class="form-label">Check-in Time</label>
+                                        <input type="time" class="form-control" id="time" required>
+                                    </div>
+                                </div>
+                                <div class="mb-3">
+                                    <label class="form-label">Address Details</label>
+                                    <div class="row">
+                                        <div class="col-md-6 mb-3">
+                                            <input type="text" class="form-control" placeholder="Enter area" required>
+                                        </div>
+                                        <div class="col-md-6 mb-3">
+                                            <input type="text" class="form-control" placeholder="Enter city" required>
+                                        </div>
+                                        <div class="col-md-6 mb-3">
+                                            <input type="text" class="form-control" placeholder="Enter state" required>
+                                        </div>
+                                        <div class="col-md-6 mb-3">
+                                            <input type="text" class="form-control" placeholder="Post Code" required>
+                                        </div>
+                                    </div>
+                                </div>
+                                <button type="submit" class="btn btn-primary w-100">Book Now</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+
+
+            <!-- Contact Section -->
+            <section id="contact" class="py-5">
+                <div class="container">
+                    <h2 class="text-center mb-4 display-5 fw-bold">Our Store</h2>
+                    <p class="text-center lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus magnam
+                        voluptatum cupiditate veritatis in, accusamus quisquam.</p>
+                    <div class="row mt-5">
+                        <div class="col-md-4 text-center">
+                            <div class="icon bg-primary text-white rounded-circle p-3 mb-3">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <h5>Address</h5>
+                            <p>Shawrapara, Mirpur<br>Dhaka, Bangladesh - 1216</p>
+                        </div>
+                        <div class="col-md-4 text-center">
+                            <div class="icon bg-primary text-white rounded-circle p-3 mb-3">
+                                <i class="fas fa-phone"></i>
+                            </div>
+                            <h5>Phone Number</h5>
+                            <p>(+880) xxxx-xxxxxx</p>
+                        </div>
+                        <div class="col-md-4 text-center">
+                            <div class="icon bg-primary text-white rounded-circle p-3 mb-3">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <h5>Email</h5>
+                            <p>softdev.adib@gmail.com</p>
+                        </div>
+                    </div>
+
+
+                    <script src="js/script.js"></script>
+
+                    <!-- Bootstrap JS -->
+                    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
